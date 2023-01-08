@@ -1,0 +1,22 @@
+. instalar novo projeto:  ng new <nome do projeto>
+
+. apagar arquivos de excesso
+
+.Em app.component.ts em @Component add template: `<router-outlet></router-outlet>`
+
+. criar em src dist/scss variable.scss
+
+
+MODULOS
+. criar : ng g m /modules/home
+
+. criar tambem:  ng g c /modules/home/components/header
+
+. criar: ng g c /modules/home/components/toDoButtonDeleteAll
+
+. criar: ng g c /modules/home/components/toDoAddItens
+
+. criar :ng g c /modules/home/components/toDoList
+
+. criar : ng g c /modules/home/pages/home
+

@@ -20,3 +20,7 @@ MODULOS
 
 . criar : ng g c /modules/home/pages/home
 
+MAIN ROUTE
+
+.EM app-routing-module.ts passar HomeComponent em Routes
+

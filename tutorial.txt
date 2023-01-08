@@ -24,3 +24,9 @@ MAIN ROUTE
 
 .EM app-routing-module.ts passar HomeComponent em Routes
 
+. Passar o seletores dos components em HTML para  Pages, no caso em pages/home.component.HTML na ordem de contrução da aplicação ex: <header></header>
+<content></content> <footer></footer>
+
+
+.DECLARAR e IMPORTAR  o HomeModule no import em main app.module.ts
+

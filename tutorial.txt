@@ -38,6 +38,9 @@ MAIN ROUTE
 
 .sub componentizar o component add e delete em to-do-list.component.html
 
+. E m to-do-list.component.html add campos ul, li, input e configuraro css2
+
+
 
 
 

@@ -30,5 +30,35 @@ MAIN ROUTE
 
 .DECLARAR e IMPORTAR  o HomeModule no import em main app.module.ts
 
-. Em dist variable.scss criar as variáveis de ambiente 
+. Em dist variable.scss criar as variáveis de ambiente
+
+. Em styles.scss importar as variaveis de ambiente e as  fontes do google fonts
+
+.Envolver o component home.component.html em uma section e aplicar uma classe container pra configurar o layout
+
+.sub componentizar o component add e delete em to-do-list.component.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

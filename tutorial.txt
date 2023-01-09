@@ -30,3 +30,5 @@ MAIN ROUTE
 
 .DECLARAR e IMPORTAR  o HomeModule no import em main app.module.ts
 
+. Em dist variable.scss criar as variáveis de ambiente 
+

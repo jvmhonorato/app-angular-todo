@@ -40,9 +40,25 @@ MAIN ROUTE
 
 . E m to-do-list.component.html add campos ul, li, input e configuraro css2
 
+. add scss no component de input e delete
+
+START CREATE LOGIC
+
+.Criar uma interface pra padronizar a tipagem dos objetos: ng g interface /modules/home/model/TaskList
+
+importar interface aplicar no component TS desejado.
+
+. Em home.module.ts importar o FormModule pra o NgModel funcionar quando chamar o public TaskList
+
+. aplicar o ngModel no <input> chamando item.checked que é o valor boleano pra toda vez que o campo checked for marcado o valor boleano mudar de true pra false
+
+. aplicar o ngModel no <input> chamando item.text pra quando digitar aparecer o que foi digitado.
 
 
+.aplicar o ngclass na <section>  chamando o 'loading' que é uma class scss com o background uma img pra aparecer condicionalmente caso não esteja chegando dados na tela.
 
+
+.aplicar o ngIf no <app-to-do-button-delete> pra caso não esteja chegando dados ele não renderizar o button na tela
 
 
 

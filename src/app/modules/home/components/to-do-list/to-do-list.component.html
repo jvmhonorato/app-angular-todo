@@ -1,23 +1,22 @@
-<section>
-  <ul>
-    <li>
-      <input type="checkbox">
-      <input type="text">
+<!-- render img from scss class if not exist data in the screnn -->
+<section ngClass="{'loading': !taskList.length}">
+  <ul *ngIf="taskList.length">
+
+    <!-- render only if there is data on the screen -->
+    <li *ngFor="let item of taskList; let i = index">
+      <input type="checkbox" [(ngModel)]="item.checked">
+      <input type="text" [(ngModel)]="item.task">
 
       <button>
-        <img src="../../../../../assets/icons/trash-svgrepo-com (1).svg">
+        <img src="../../../../../assets/icons/trash-svgrepo-com (1).svg" alt="">
       </button>
+      {{item | json}}
     </li>
-    <li>
-      <input type="checkbox">
-      <input type="text">
 
-      <button>
-        <img src="../../../../../assets/icons/trash-svgrepo-com (1).svg">
-      </button>
-    </li>
   </ul>
 </section>
 <app-to-do-add-itens></app-to-do-add-itens>
-<app-to-do-button-delete-all></app-to-do-button-delete-all>
+
+<!-- render only if there is data on the screen -->
+<app-to-do-button-delete-all *ngIf="taskList.length"></app-to-do-button-delete-all>
 

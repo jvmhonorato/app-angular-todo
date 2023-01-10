@@ -7,7 +7,7 @@
       <input type="checkbox" [(ngModel)]="item.checked">
       <input type="text" [(ngModel)]="item.task">
 
-      <button>
+      <button (click)="deleteItemTaskList(i)">
         <img src="../../../../../assets/icons/trash-svgrepo-com (1).svg" alt="">
       </button>
       {{item | json}}
@@ -18,5 +18,5 @@
 <app-to-do-add-itens></app-to-do-add-itens>
 
 <!-- render only if there is data on the screen -->
-<app-to-do-button-delete-all *ngIf="taskList.length"></app-to-do-button-delete-all>
+<app-to-do-button-delete-all *ngIf="taskList.length" (click)="deleteAllTaskList()"></app-to-do-button-delete-all>
 

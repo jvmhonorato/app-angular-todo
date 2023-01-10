@@ -12,4 +12,20 @@ export class ToDoListComponent {
     {task:"Minha nova Task 2", checked: false},
   ];
 
+  //delete especific item from array
+   public deleteItemTaskList(event: number){
+    this.taskList.splice(event, 1);
+   }
+
+   //delete all objects in array
+   public deleteAllTaskList(){
+    // add pop up to confirm action
+    const confirm = window.confirm("Are you sure you want to delete")
+    if(confirm === true){
+      this.taskList = [];
+    }else{
+
+    }
+
+   }
 }

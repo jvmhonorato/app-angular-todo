@@ -61,6 +61,11 @@ importar interface aplicar no component TS desejado.
 .aplicar o ngIf no <app-to-do-button-delete> pra caso não esteja chegando dados ele não renderizar o button na tela
 
 
+.criar em to-do-list.componet.ts criar o metodo deleteTaskItem() e deleteAllTaskItem()
+
+. no html aplicar no o evento (click) com seus respectivos metodos 
+
+
 
 
 

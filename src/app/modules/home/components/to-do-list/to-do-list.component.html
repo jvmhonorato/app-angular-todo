@@ -5,7 +5,7 @@
     <!-- render only if there is data on the screen -->
     <li *ngFor="let item of taskList; let i = index">
       <input type="checkbox" [(ngModel)]="item.checked">
-      <input type="text" [(ngModel)]="item.task" [ngClass]="{'checked': item.checked}">
+      <input type="text" (keyup)="validationInput(item.task,i)" [(ngModel)]="item.task" [ngClass]="{'checked': item.checked}">
 
       <button (click)="deleteItemTaskList(i)">
         <img src="../../../../../assets/icons/trash-svgrepo-com (1).svg" alt="">

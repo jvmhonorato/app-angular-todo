@@ -16,6 +16,17 @@ export class ToDoListComponent implements DoCheck {
     this.taskList.sort( (first, last) => Number(first.checked) - Number(last.checked) )
   }
 
+
+  //validation to ask if u wanna delete iten case erase all content
+  public validationInput(event: string, index:number) {
+    if (!event.length){
+      const confirm = window.confirm('Task is empty, do you want to delete it?')
+      if(confirm){
+        this.deleteItemTaskList(index)
+      }
+    }
+  }
+
   public setEmitTaskList(event: string){
     this.taskList.push({task: event, checked: false});
   }

@@ -94,7 +94,10 @@ PRA NÃO ADICIONAR VAZIO:
 .add [ngClass]="{'checked': item.checked}" no input text pra caso esteja marcado aplica a clase scss que sublinha
 
 
-.Em to-do-list.component.ts pra mover is items checados pra baixo na lista: criar um ciclo de vida ngCheck
+.Em to-do-list.component.ts pra mover is items checados pra baixo na lista: criar um ciclo de vida ngCheck e criar logica usando sort()
+
+
+.Em to-do-list.component.ts criar validationIput() com uma condicioanl pra perguntar se quer deletar o Item quando apagar o conteúdo inteiro
 
 
 

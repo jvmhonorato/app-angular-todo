@@ -7,13 +7,14 @@ import { TaskList } from '../../model/task-list';
   styleUrls: ['./to-do-list.component.scss']
 })
 export class ToDoListComponent implements DoCheck {
-  public taskList: Array<TaskList> = [];
+  public taskList: Array<TaskList> = JSON.parse(localStorage.getItem("List") || '[]');
 
 
   // logic to put checked item below of unchecked itens
   ngDoCheck(){
-    //sort to organization, turn in Number and then sort by organization
-    this.taskList.sort( (first, last) => Number(first.checked) - Number(last.checked) )
+    this.setLocalStorage();
+
+
   }
 
 
@@ -46,5 +47,14 @@ export class ToDoListComponent implements DoCheck {
 
     }
 
+   }
+
+   public setLocalStorage(){
+
+      if(this.taskList){
+      //sort to organization, turn in Number and then sort by organization
+      this.taskList.sort( (first, last) => Number(first.checked) - Number(last.checked) )
+      localStorage.setItem("List", JSON.stringify(this.taskList))
+      }
    }
 }

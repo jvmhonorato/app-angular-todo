@@ -100,6 +100,16 @@ PRA NÃO ADICIONAR VAZIO:
 .Em to-do-list.component.ts criar validationIput() com uma condicioanl pra perguntar se quer deletar o Item quando apagar o conteúdo inteiro
 
 
+LOCALSTORAGE
+
+
+.Criar metodo setLocalStorage e passar a função sort() e a função pra salvar em LOCALSTORAGE  dentro de uma condicional checando se ta vindo dados de taskList
+
+.Em taskList criar um parse pra não dar conflito dos dasdos JSON(string) vindo de LOCALSTORAGE
+
+. e no ngCheck() chamr o metodo setLocalStorage
+
+
 
 
 

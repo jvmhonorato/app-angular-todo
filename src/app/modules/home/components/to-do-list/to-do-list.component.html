@@ -15,7 +15,7 @@
 
   </ul>
 </section>
-<app-to-do-add-itens></app-to-do-add-itens>
+<app-to-do-add-itens (emmitItemTaskList)="setEmitTaskList($event)"></app-to-do-add-itens>
 
 <!-- render only if there is data on the screen -->
 <app-to-do-button-delete-all *ngIf="taskList.length" (click)="deleteAllTaskList()"></app-to-do-button-delete-all>

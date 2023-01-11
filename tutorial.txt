@@ -58,17 +58,38 @@ importar interface aplicar no component TS desejado.
 .aplicar o ngclass na <section>  chamando o 'loading' que é uma class scss com o background uma img pra aparecer condicionalmente caso não esteja chegando dados na tela.
 
 
+DELETE
+
 .aplicar o ngIf no <app-to-do-button-delete> pra caso não esteja chegando dados ele não renderizar o button na tela
 
 
 .criar em to-do-list.componet.ts criar o metodo deleteTaskItem() e deleteAllTaskItem()
 
-. no html aplicar no o evento (click) com seus respectivos metodos 
+. no html aplicar no o evento (click) com seus respectivos metodos
 
+CREATE
 
+.Em to-do-add-itens.ts  criar metodo @Output() public emmitItemTaskList = new EventEmitter();
 
+.criar um metodo vazio: public addItemTaskList: string = "";
 
+.Criar tambem metodo:public submitItemTaskList(){
+    console.log(this.addItemTaskList);
 
+  }
+
+.Em to-do-add-itens.html usar o ngModel no input chamando o metod addItemTaskList  pra absorver os dados digitados
+
+.em to-do-add-itens.html tambem no <input> acrecentar o evento (keyup.enter)="submitItemTaskList()" pra setar os dados com a tecla 'Enter'
+
+.Em to-do-list.component.ts passar metodo: setEmitTaskList(event: string)
+{this.taskList.push({task: event, checked: false});},
+
+.Em to-do-list.component.html passar: (emmitItemTaskList)="setEmitTaskList($event)
+
+PRA NÃO ADICIONAR VAZIO:
+
+.Em to-do-add-itens.component.ts add no submitItemTaskList()   o trim() pra nãp adicioanr  espaços vazios e criar condicional pra nãp add valores nullos 
 
 
 

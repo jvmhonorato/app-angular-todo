@@ -11,6 +11,9 @@ export class ToDoListComponent {
     {task:"", checked: true},
     {task:"Minha nova Task 2", checked: false},
   ];
+  public setEmitTaskList(event: string){
+    this.taskList.push({task: event, checked: false});
+  }
 
   //delete especific item from array
    public deleteItemTaskList(event: number){

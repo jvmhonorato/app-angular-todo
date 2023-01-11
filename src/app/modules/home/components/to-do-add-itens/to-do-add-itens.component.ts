@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-to-do-add-itens',
@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class ToDoAddItensComponent {
 
+  @Output() public emmitItemTaskList = new EventEmitter();
+
+  public addItemTaskList: string = "";
+
+  public submitItemTaskList(){
+    //console.log(this.addItemTaskList);
+
+    //use trim() to no add data with empty string ""
+    this.addItemTaskList = this.addItemTaskList.trim()
+
+    //conditional to add item only if there is data in input field
+    if(this.addItemTaskList){
+      this.emmitItemTaskList.emit(this.addItemTaskList);
+      this.addItemTaskList = ""
+    }
+
+  }
 }

@@ -89,7 +89,12 @@ CREATE
 
 PRA NÃO ADICIONAR VAZIO:
 
-.Em to-do-add-itens.component.ts add no submitItemTaskList()   o trim() pra nãp adicioanr  espaços vazios e criar condicional pra nãp add valores nullos 
+.Em to-do-add-itens.component.ts add no submitItemTaskList()   o trim() pra nãp adicioanr  espaços vazios e criar condicional pra nãp add valores nullos
+
+.add [ngClass]="{'checked': item.checked}" no input text pra caso esteja marcado aplica a clase scss que sublinha
+
+
+.Em to-do-list.component.ts pra mover is items checados pra baixo na lista: criar um ciclo de vida ngCheck
 
 
 

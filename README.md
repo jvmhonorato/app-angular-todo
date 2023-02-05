@@ -36,7 +36,7 @@ Here are the technologies used in this project.
   - npm install
   
 * To run the project.
-  -ng server
+  - ng server
   
 ## How to use
 

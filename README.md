@@ -33,10 +33,16 @@ Here are the technologies used in this project.
   
   
 * To install the dependencies.
-  - npm install
+```bash
+$  npm install
+```
+  
   
 * To run the project.
-  - ng server
+```bash
+ $ ng server
+```
+  
   
 ## How to use
 

@@ -1,7 +1,7 @@
 ## Angular TO-DO-LIST  (CRUD)
 
 
-application to manage TASKS
+Application to manage TASKS, this app was build to pratice angular features
 
 
 ## Technology 
